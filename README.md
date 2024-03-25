@@ -70,4 +70,4 @@ kalau suda :
 
 ## Demo ⬇️
 
-https://hanzo080501.github.io/TP_Kelompok03/
+https://tvstika.github.io/MiniProject-UMKM/
