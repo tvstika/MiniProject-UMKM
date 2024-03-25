@@ -4,7 +4,7 @@ Tugas keompok 3
 
 ## preview
 
-![Logo](/img/ssreadme/Preview.png)
+![Logo](/images/ssreadme/Preview.png)
 
 ## Tech & Language Stack
 
