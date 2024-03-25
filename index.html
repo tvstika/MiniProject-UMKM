@@ -1,413 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daruna Homedeco</title>
     <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Google Font Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <!-- navbar start -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Start Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Daruna Homedeco</a>
-        <button
-          class="navbar-toggler shadow-none border-0"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- sidebar start -->
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul
-            class="navbar-nav justify-content-evenly flex-grow-1 mb-2 mb-lg-0"
-          >
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#product"
-                >Product</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#about"
-                >About</a
-              >
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2 rounded-pill"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success rounded-pill" type="submit">
-              Search
-            </button>
-          </form>
-          <div class="form-check form-switch nav-item ms-3" onclick="dark()">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              role="switch"
-              id="flexSwitchCheckDefault"
-            />
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Daruna</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav justify-content-evenly flex-grow-1 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">About</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-secondary" type="submit">Search</button>
+            </form>
+            <div class="form-check form-switch nav-item ms-3" onclick="dark()">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+            </div>
           </div>
         </div>
-      </div>
     </nav>
-
-    <!-- navar end -->
-
-    <!-- Hero start -->
+    <!-- End Navbar -->
+    <!-- Start Hero -->
     <div class="hero">
-      <div class="container">
-        <div class="row row-cols-2 gap-4">
-          <div class="col-6 hero-contain">
-            <h1 class="h-brand">Daruna</h1>
-            <h2 class="h-brands">Home Deco</h2>
-            <p class="hero-list mt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis
-              qui fugiat possimus fugit dolorum praesentium, facilis soluta eius
-              architecto perspiciatis reiciendis aspernatur hic facere iusto,
-              rem delectus voluptatem neque! Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Esse at sequi ea ab nobis doloremque
-              nemo blanditiis accusamus facere ipsa saepe fugit eos ad hic
-              laboriosam repellendus illum, quis officia.
-            </p>
-            <button
-              class="btn btn-outline-secondary rounded-pill"
-              data-bs-toggle="modal"
-              data-bs-target="#contactModal"
-            >
-              Contact Us <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-          <div class="hero-img col mt-5 container-fluid">
-            <img
-              class=""
-              src="img/ad037c9f70a50e39ac4c4fb59b30251c-removebg-preview.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Hero end -->
-
-    <!-- product start -->
-
-    <section class="content p-5 g-5 text-center" id="product">
-      <h1 class="mt-5">Produk Kami</h1>
-      <div class="row">
-        <div class="col-md-3 mb-3">
-          <div class="card text-center">
-            <img
-              src="https://img.freepik.com/free-photo/mockup-photo-frame-green-wall-mounted-wooden-cabinet_41470-5118.jpg?t=st=1710990451~exp=1710994051~hmac=268ab6c10a6905ea4c0bb9bb8404a0bbd96ee72e1b6e472d69d52c836f2d4dcc&w=900"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Product</h5>
-              <p class="card-text">Rp.150.000,00</p>
-              <a href="#" class="btn btn-secondary">Buy</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-3">
-          <div class="card text-center">
-            <img
-              src="https://img.freepik.com/free-photo/mockup-photo-frame-green-wall-mounted-wooden-cabinet_41470-5118.jpg?t=st=1710990451~exp=1710994051~hmac=268ab6c10a6905ea4c0bb9bb8404a0bbd96ee72e1b6e472d69d52c836f2d4dcc&w=900"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Product</h5>
-              <p class="card-text">Rp.150.000,00</p>
-              <a href="#" class="btn btn-secondary">Buy</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-3">
-          <div class="card text-center">
-            <img
-              src="https://img.freepik.com/free-photo/mockup-photo-frame-green-wall-mounted-wooden-cabinet_41470-5118.jpg?t=st=1710990451~exp=1710994051~hmac=268ab6c10a6905ea4c0bb9bb8404a0bbd96ee72e1b6e472d69d52c836f2d4dcc&w=900"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Product</h5>
-              <p class="card-text">Rp.150.000,00</p>
-              <a href="#" class="btn btn-secondary">Buy</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-3">
-          <div class="card text-center">
-            <img
-              src="https://img.freepik.com/free-photo/mockup-photo-frame-green-wall-mounted-wooden-cabinet_41470-5118.jpg?t=st=1710990451~exp=1710994051~hmac=268ab6c10a6905ea4c0bb9bb8404a0bbd96ee72e1b6e472d69d52c836f2d4dcc&w=900"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Product</h5>
-              <p class="card-text">Rp.150.000,00</p>
-              <a href="#" class="btn btn-secondary">Buy</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-3">
-          <div class="card text-center">
-            <img
-              src="https://img.freepik.com/free-photo/mockup-photo-frame-green-wall-mounted-wooden-cabinet_41470-5118.jpg?t=st=1710990451~exp=1710994051~hmac=268ab6c10a6905ea4c0bb9bb8404a0bbd96ee72e1b6e472d69d52c836f2d4dcc&w=900"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Product</h5>
-              <p class="card-text">Rp.150.000,00</p>
-              <a href="#" class="btn btn-secondary">Buy</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-3">
-          <div class="card text-center">
-            <img
-              src="https://img.freepik.com/free-photo/mockup-photo-frame-green-wall-mounted-wooden-cabinet_41470-5118.jpg?t=st=1710990451~exp=1710994051~hmac=268ab6c10a6905ea4c0bb9bb8404a0bbd96ee72e1b6e472d69d52c836f2d4dcc&w=900"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Product</h5>
-              <p class="card-text">Rp.150.000,00</p>
-              <a href="#" class="btn btn-secondary">Buy</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-3">
-          <div class="card text-center">
-            <img
-              src="https://img.freepik.com/free-photo/mockup-photo-frame-green-wall-mounted-wooden-cabinet_41470-5118.jpg?t=st=1710990451~exp=1710994051~hmac=268ab6c10a6905ea4c0bb9bb8404a0bbd96ee72e1b6e472d69d52c836f2d4dcc&w=900"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Product</h5>
-              <p class="card-text">Rp.150.000,00</p>
-              <a href="#" class="btn btn-secondary">Buy</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-3">
-          <div class="card text-center">
-            <img
-              src="https://img.freepik.com/free-photo/mockup-photo-frame-green-wall-mounted-wooden-cabinet_41470-5118.jpg?t=st=1710990451~exp=1710994051~hmac=268ab6c10a6905ea4c0bb9bb8404a0bbd96ee72e1b6e472d69d52c836f2d4dcc&w=900"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Product</h5>
-              <p class="card-text">Rp.150.000,00</p>
-              <a href="#" class="btn btn-secondary">Buy</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- product end -->
-
-    <!-- footer start -->
-
-    <div class="container-fluid my-5">
-      <!-- Footer -->
-      <footer
-        class="footer-container text-center text-lg-start text-white"
-        id="about"
-      >
-        <!-- Grid container -->
-        <div class="container p-4 pb-0">
-          <!-- Section: Links -->
-          <section class="">
-            <!--Grid row-->
-            <div class="row">
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">
-                  Daruna Homedeco
-                </h6>
-                <p>
-                  Here you can use rows and columns to organize your footer
-                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit.
-                </p>
-              </div>
-              <!-- Grid column -->
-
-              <hr class="w-100 clearfix d-md-none" />
-
-              <!-- Grid column -->
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-                <p>
-                  <a class="text-white" href="#product">list product</a>
-                </p>
-                <p>
-                  <a class="text-white" href="#product">list product</a>
-                </p>
-                <p>
-                  <a class="text-white" href="#product">list product</a>
-                </p>
-                <p>
-                  <a class="text-white" href="#product">list product</a>
-                </p>
-              </div>
-              <!-- Grid column -->
-
-              <hr class="w-100 clearfix d-md-none" />
-
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">
-                  Useful links
-                </h6>
-                <p>
-                  <a class="text-white">Your Account</a>
-                </p>
-                <p>
-                  <a class="text-white">Become an Affiliate</a>
-                </p>
-                <p>
-                  <a class="text-white">Shipping Rates</a>
-                </p>
-                <p>
-                  <a class="text-white">Help</a>
-                </p>
-              </div>
-
-              <!-- Grid column -->
-              <hr class="w-100 clearfix d-md-none" />
-
-              <!-- Grid column -->
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                <button
-                  class="btn btn-outline-light rounded-pill"
-                  data-bs-toggle="modal"
-                  data-bs-target="#contactModal"
-                >
-                  Contact Us <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </div>
-              <!-- Grid column -->
-            </div>
-            <!--Grid row-->
-          </section>
-          <!-- Section: Links -->
-
-          <hr class="my-3" />
-
-          <!-- Section: Copyright -->
-          <section class="p-3 pt-0">
-            <div class="row d-flex align-items-center">
-              <!-- Grid column -->
-              <div class="col-md-7 col-lg-8 text-center text-md-start">
-                <!-- Copyright -->
-                <div class="p-3">
-                  © 2020 Copyright:
-                  <a class="text-white" href="#">Dararuna Homedeco</a>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-5">
+                    <div class="hero-left">
+                        <p class="umkm-title mb-0">Daruna</p>
+                        <p class="umkm-sub">Home Deco</p>
+                        <p class="umkm-tagline mt-3">Daruna Home Design & Decoration</p>
+                        <p><a href="#" class="btn btn-secondary mb-5">Explore</a></p>
+                        <p class="umkm-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores ab quidem voluptas.</p>
+                    </div>
                 </div>
-              </div>
-
-              <!-- Grid column -->
-              <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                <!-- Facebook -->
-                <a
-                  class="btn btn-outline-light btn-floating m-1"
-                  class="text-white"
-                  role="button"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-
-                <!-- Twitter -->
-                <a
-                  class="btn btn-outline-light btn-floating m-1"
-                  class="text-white"
-                  role="button"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-
-                <!-- Google -->
-                <a
-                  class="btn btn-outline-light btn-floating m-1"
-                  class="text-white"
-                  role="button"
-                  ><i class="fab fa-google"></i
-                ></a>
-
-                <!-- Instagram -->
-                <a
-                  class="btn btn-outline-light btn-floating m-1"
-                  class="text-white"
-                  role="button"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </div>
+                <div class="col-lg-7">
+                    <div class="hero-right float-end">
+                        <img src="images/1-2.png" class="img-fluid">
+                    </div>
+                </div>
             </div>
-          </section>
         </div>
-      </footer>
+    </div>    
+    <!-- End Hero -->
+    <!-- Start Product Preview -->
+    <div class="product-section">
+        <div class="container">
+            <div class="row">
+                <!-- Start Column 1 -->
+                <div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
+                    <h2 class="mb-4 section-title">Dibuat dengan bahan berkualitas</h2>
+                    <p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. </p>
+                    <p><a href="#" class="btn btn-secondary">Explore</a></p>
+                </div> 
+                <!-- End Column 1 -->
+                <!-- Start Column 2 -->
+                <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+                    <a class="product-item" href="#">
+                        <img src="images/WhatsApp Image 2024-03-25 at 10.11.34 (1).png" class="img-fluid product-thumbnail">
+                        <p class="product-title">Produk 1</p>
+                        <p class="product-price">Rp. 50.000</p>
+                    </a>
+                </div> 
+                <!-- End Column 2 -->
+                <!-- Start Column 3 -->
+                <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+                    <a class="product-item" href="#">
+                        <img src="images/WhatsApp Image 2024-03-25 at 10.11.35 (1).png" class="img-fluid product-thumbnail">
+                        <p class="product-title">Produk 1</p>
+                        <p class="product-price">Rp. 50.000</p>
+                    </a>
+                </div>
+                <!-- End Column 3 -->
+                <!-- Start Column 4 -->
+                <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+                    <a class="product-item" href="#">
+                        <img src="images/WhatsApp Image 2024-03-25 at 10.11.35.png" class="img-fluid product-thumbnail">
+                        <p class="product-title">Produk 1</p>
+                        <p class="product-price">Rp. 50.000</p>
+                    </a>
+                </div>
+                <!-- End Column 4 -->
+            </div>
+        </div>
     </div>
-
-    <!-- footer end -->
-
-    <!-- Modal -->
-    <div
-      class="modal fade pt-5"
-      id="contactModal"
-      tabindex="-1"
-      aria-labelledby="contactModalLabel"
-      aria-hidden="true"
-    >
+    <!-- End Product Preview -->
+    <!-- Start Service -->
+    <div class="service-section">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-7 mb-5">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Start Column 1 -->
+                            <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+                                <a class="product-item" href="#">
+                                    <img src="images/1-2.png" class="img-fluid product-thumbnail">
+                                </a>
+                            </div> 
+                            <!-- End Column 1 -->
+                            <!-- Start Column 2 -->
+                            <div class="col-12 col-md-4 mb-5 mb-md-0 d-flex flex-column">
+                                <div class="mb-5">
+                                    <a class="product-item" href="#">
+                                        <img src="images/2-2.png" class="img-fluid product-thumbnail">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a class="product-item" href="#">
+                                        <img src="images/2-2.png" class="img-fluid product-thumbnail">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Column 2 -->
+                            <!-- Start Column 3 -->
+                            <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+                                <a class="product-item" href="#">
+                                    <img src="images/3-1.png" class="img-fluid product-thumbnail">
+                                </a>
+                            </div>
+                            <!-- End Column 3 -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <h2 class="mb-4 section-title">Menerima kustomisasi desain dekorasi</h2>
+                    <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores ab quidem voluptas.</p>
+                    <p><a href="#" class="btn btn-secondary">Contact us</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Service -->
+    <!-- Start About -->
+    <div class="about-section">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-5 mb-5">
+                    <div class="about-left">
+                        <img class="img-fluid" src="images/daruna-logo.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-right">
+                        <h2 class="mb-4 section-title">Tentang kami</h2>
+                        <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores ab quidem voluptas iure labore pariatur maxime sequi molestiae rem! Molestias minima dolores distinctio magni inventore architecto, totam vitae repellendus facere?</p>
+                        <p><a href="#" class="btn btn-secondary">More</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About -->
+    <!-- Start Footer -->
+    <div class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <div class="footer-logo">
+                        <img src="images/daruna-logo.png" alt="">
+                    </div>
+                </div>
+                <div class="col-7">
+                    <ul>
+                        <li class="footer-list-title">Ikuti Kami</li>
+                        <li>@daruna_homedeco</li>
+                        <li>wa.me/6288238800508</li>
+                    </ul>
+                    <ul>
+                        <li class="footer-list-title mt-2">Kontak kami</li>
+                        <li><button class="btn btn-outline-light rounded-pill" data-bs-toggle="modal" data-bs-target="#contactModal"> Contact Us <i class="fa-solid fa-arrow-right"></i></button></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul>
+                        <li class="footer-list-title">Tautan Penting</li>
+                        <li>Home</li>
+                        <li>Product</li>
+                        <li>About</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer-cr">© 2024 Daruna Home Deco.</p>
+        </div>
+    </div>
+    <!-- End Footer -->
+    <!-- Start Modal -->
+    <div class="modal .modal-content fade pt-5" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <form id="contactForm">
@@ -421,28 +229,18 @@
               </div>
               <div class="mb-3">
                 <label for="message" class="form-label">Message</label>
-                <textarea
-                  class="form-control"
-                  id="message"
-                  rows="5"
-                  required
-                ></textarea>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
               </div>
-              <button type="submit" class="btn btn-secondary">
-                Send Message
-              </button>
+              <button type="submit" class="btn btn-secondary">Send Message</button>
             </form>
           </div>
         </div>
       </div>
     </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="js/data.js"></script>
-  </body>
+    <!-- End Modal -->
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script src="js/mode.js"></script>
+</body>
 </html>
