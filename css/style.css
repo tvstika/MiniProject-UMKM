@@ -1,193 +1,183 @@
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  background-image: url(https://img.freepik.com/free-vector/white-simple-neumorphic-abstract-banner-elegant-look_1017-43172.jpg?w=1380&t=st=1710993076~exp=1710993676~hmac=9a36bcfefa6a54a08555cefa628f62c312af50f6a6f83760f08ccf714ac0e812);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
-
 .dark {
-  background-color: #292929;
-  color: #ffff;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-}
-
-.navbar {
-  background-color: rgba(217, 217, 217, 1);
-  border-radius: 12px;
-  padding: 0.5rem 3rem;
-}
-.navbar ul {
-  margin: 0rem 2rem;
-}
-.navbar ul li:hover {
-  background-color: rgb(255, 246, 235);
-  border-radius: 5px;
-  transform: scale(1.07);
-  border-radius: 20px;
-  transition: transform 0.2s ease;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-}
-
-.form-switch .form-check-input {
-  width: 3rem;
-  height: 2rem;
-}
-.hero {
-  position: relative;
-  margin: 5rem 1rem;
-  justify-content: space-around;
-}
-.hero .h-brand {
-  font-size: 8rem;
-  font-weight: 700;
-  text-transform: capitalize;
-  font-weight: 700;
-  letter-spacing: 0.5rem;
-}
-.hero .h-brands {
-  font-size: 4rem;
-  font-weight: 700;
-  letter-spacing: 1rem;
-}
-
-.hero-img {
-  position: relative;
-  max-width: 40%;
-  max-height: auto;
-  border-radius: 1.25rem;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
-  text-align: center;
-  padding: 2rem;
-  overflow: hidden;
-}
-
-.hero-img img {
-  max-width: 100%;
-  object-fit: cover;
-  height: 60vh;
-  animation: bliding 3s infinite;
-  -webkit-animation: bliding 3s infinite;
-}
-
-@keyframes bliding {
-  0%,
-  100% {
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
+    background-color: #292929;
+    color: #ffff;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
   }
-  50% {
-    transform: translateY(15px);
-    -webkit-transform: translateY(15px);
-    -moz-transform: translateY(15px);
-    -ms-transform: translateY(15px);
-    -o-transform: translateY(15px);
-  }
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
 }
-
-.card {
-  background-color: rgb(227, 227, 227);
-  box-shadow: 7px 5px 5px rgb(5, 5, 5);
-  border-radius: 1rem;
-  padding: 1rem;
-  margin: 1rem;
+.navbar{
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 12px;
+    padding: 0.5rem 3rem;
+    margin: 1rem 2rem;
 }
-.card:hover {
-  transform: scale(1.03);
-  transition: transform 0.2s ease;
+.navbar-brand{
+    font-weight: 700;
 }
-
-.footer-container {
-  background-color: #292929;
+.navbar-toggler{
+    border: none;
 }
-
-@media (max-width: 991px) {
-  .hero-contain {
-    width: 100%;
-  }
-
-  .h-brand {
+ul{
+    margin: 0rem 3rem;
+}
+.hero{
+    margin: 7rem 1rem;
+}
+div .hero{
+    justify-content: space-between;
+}
+.hero .umkm-title{
+    font-size: 7rem;
+    font-weight: 700;
+}
+.hero .umkm-sub{
     font-size: 3rem;
-    letter-spacing: 0;
-    font-weight: 400;
-  }
-  .h-brands {
-    letter-spacing: 0;
-    font-size: 2rem;
-    font-weight: 300;
-  }
-  .hero {
-    gap: -5rem;
-  }
-  .hero-brand {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .hero-img {
-    position: relative;
-    justify-content: center !important;
-    /* background-color: aqua; */
-    width: 100%;
-    align-items: center;
-    overflow: normal;
-    max-width: 100%;
-  }
+    font-weight: 700;
+    letter-spacing: 1.2rem;
+    margin-top: -2rem;
 }
-@media (max-width: 700px) {
-  .hero .h-brand {
-    font-size: 3rem;
-    letter-spacing: 0;
-    font-weight: 600;
-  }
-
-  .hero-contain {
-    width: 100%;
-  }
-
-  .hero .h-brands {
-    letter-spacing: 0;
-    font-size: 2rem;
-    font-weight: 600;
-  }
-  .hero {
-    gap: -5rem;
-  }
-
-  .hero-list {
-    display: none;
-  }
-
-  .hero-brand,
-  .hero-img {
-    justify-content: center;
-    align-items: center;
+.hero .umkm-tagline{
+    font-size: 1.5rem;
+    word-spacing: 2rem;
+}
+.btn{
+    background-color: rgb(179, 179, 179);
+    width: 10rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 50px;
+}
+.hero-desc{
+    margin-top: 5rem;
+    font-size: 1rem;
+}
+.hero-right{
+    align-items: end;
+}
+.hero-right img{
+    border-radius: 12px;
+    height: 600px;
+}
+.product-section{
+    margin: 7rem 1rem;
+}
+.section-title{
+    font-size: 2.5rem;
+}
+.product-item{
+    text-decoration: none;
+    color: black;
     text-align: center;
-  }
-
-  .hero-img {
-    position: relative;
-    justify-content: center !important;
-    width: 100%;
-    max-width: 40%;
     align-items: center;
-    overflow: normal;
-    max-width: 100%;
-  }
+    margin-top: -2rem;
+    padding: 1rem 0rem;
+}
+.product-title{
+    font-size: 1.5rem;
+}
+.product-price{
+    font-weight: 700;
+}
+.service-section{
+    margin: 7rem 1rem;
+}
+.service-section img{
+    border-radius: 12px;
+    width: 500px;
+}
+.about-section{
+    margin: 7rem 1rem;
+}
+.about-left img{
+    height: 500px;
+    border-radius: 12px;
+}
+.footer-section{
+    background-color: rgba(217, 217, 217, 1);
+    padding: 1.5rem;
+}
+.footer-logo img{
+    width: 100px;
+    border-radius: 50px;
+}
+.footer-section ul{
+    list-style-type: none;
+}
+.footer-list-title{
+    font-weight: 700;
+}
+.footer-cr{
+    text-align: center;
+    margin-bottom: -1rem;
+}
+.product-main{
+    margin: 10rem 1rem;
+}
+.card{
+    background-color: rgb(234, 234, 234);
+}
+.about-main-section{
+    margin: 7rem 1rem;
+}
+.icon-socmed{
+    display: inline-flex;
+    list-style-type: none;
+    text-decoration: none;
+}
+.icon-socmed i{
+    font-size: 2rem;
+    padding: 0rem 1rem;
+    color: black;
+}
+.modal-content{
+    border-radius: 12px;
+}
+@media (max-width: 500px){
+    .navbar{
+        padding: 0.5rem 0rem;
+        margin: 1rem 0.5rem;
+    }
+    .form-check{
+        padding: 1rem 1.5rem;
+    }
+    .hero .umkm-title{
+        font-size: 5rem;
+    }
+    .hero .umkm-sub{
+        font-size: 2rem;
+        margin-top: -1rem;
+        letter-spacing: 0.9rem;
+    }
+    .hero .umkm-tagline{
+        font-size: 1rem;
+    }
+    .hero .umkm-desc{
+        margin-top: 0rem;
+        margin-bottom: 4rem;
+    }
+    .hero-right img{
+        height: 80%;
+    }
+    .about-left img{
+        height: 80%;
+    }
+    .footer-logo img{
+        width: 70px;
+    }
+    .footer-section .col-7{
+        width: 100%;
+        margin: 1rem;
+        margin-top: -4.5rem;
+    }
+    .footer-section .col-4{
+        width: 100%;
+        margin: 1rem;
+    }
 }
