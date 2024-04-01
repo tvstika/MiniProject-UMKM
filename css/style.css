@@ -1,201 +1,211 @@
 .dark {
-    background-color: #292929;
-    color: #ffff;
-    transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
+  background-color: #292929;
+  color: #ffff;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+
+  .form-check-input {
+    background-color: #000;
   }
-body{
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
+  .footer-section,
+  .navbar,
+  .modal-content {
+    background-color: #565656;
+  }
 }
-body::-webkit-scrollbar{
-    display: none;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
-.navbar{
-    background-color: rgba(217, 217, 217, 1);
-    border-radius: 12px;
-    padding: 0.5rem 3rem;
-    margin: 1rem 2rem;
+body::-webkit-scrollbar {
+  display: none;
 }
-.navbar-brand{
-    font-weight: 700;
+.navbar {
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 12px;
+  padding: 0.5rem 3rem;
+  margin: 1rem 2rem;
 }
-.navbar-toggler{
-    border: none;
+.navbar-brand {
+  font-weight: 700;
+}
+.navbar-toggler {
+  border: none;
 }
 .form-switch .form-check-input {
-    width: 3rem;
-    height: 2rem;
+  width: 3rem;
+  height: 2rem;
+}
+ul {
+  margin: 0rem 3rem;
+}
+.hero {
+  margin: 7rem 1rem;
+}
+div .hero {
+  justify-content: space-between;
+}
+
+.hero .umkm-title {
+  font-size: 7rem;
+  font-weight: 700;
+}
+.hero .umkm-sub {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1.2rem;
+  margin-top: -2rem;
+}
+.hero .umkm-tagline {
+  font-size: 1.5rem;
+  word-spacing: 2rem;
+}
+.btn {
+  background-color: rgb(179, 179, 179);
+  width: 10rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 50px;
+}
+.hero-desc {
+  margin-top: 5rem;
+  font-size: 1rem;
+}
+.hero-right {
+  align-items: end;
+}
+.hero-right img {
+  border-radius: 12px;
+  height: 600px;
+}
+.product-section {
+  margin: 7rem 1rem;
+}
+.section-title {
+  font-size: 2.5rem;
+}
+.product-item {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  align-items: center;
+  margin-top: -2rem;
+  padding: 1rem 0rem;
+}
+.product-title {
+  font-size: 1.5rem;
+}
+.product-price {
+  font-weight: 700;
+}
+.service-section {
+  margin: 7rem 1rem;
+}
+.service-section img {
+  border-radius: 12px;
+  width: 500px;
+}
+.about-section {
+  margin: 7rem 1rem;
+}
+.about-left img {
+  height: 500px;
+  border-radius: 12px;
+}
+.footer-section {
+  background-color: rgba(217, 217, 217, 1);
+  padding: 1.5rem;
+}
+.footer-logo img {
+  width: 100px;
+  border-radius: 50px;
+}
+.footer-section ul {
+  list-style-type: none;
+}
+.footer-list-title {
+  font-weight: 700;
+}
+.footer-cr {
+  text-align: center;
+  margin-bottom: -1rem;
+}
+.product-main {
+  margin: 10rem 1rem;
+}
+.card {
+  background-color: rgb(234, 234, 234);
+}
+.about-main-section {
+  margin: 7rem 1rem;
+}
+.icon-socmed {
+  display: inline-flex;
+  list-style-type: none;
+  text-decoration: none;
+}
+.icon-socmed i {
+  font-size: 2rem;
+  padding: 0rem 1rem;
+  color: black;
+}
+.modal-content {
+  border-radius: 12px;
+}
+@media (max-width: 800px) {
+  .hero .umkm-desc {
+    display: none;
   }
-ul{
-    margin: 0rem 3rem;
-}
-.hero{
-    margin: 7rem 1rem;
-}
-div .hero{
-    justify-content: space-between;
-}
-
-.hero .umkm-title{
-    font-size: 7rem;
-    font-weight: 700;
-}
-.hero .umkm-sub{
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: 1.2rem;
-    margin-top: -2rem;
-}
-.hero .umkm-tagline{
-    font-size: 1.5rem;
-    word-spacing: 2rem;
-}
-.btn{
-    background-color: rgb(179, 179, 179);
-    width: 10rem;
-    height: 2.5rem;
-    border: none;
-    border-radius: 50px;
-}
-.hero-desc{
-    margin-top: 5rem;
-    font-size: 1rem;
-}
-.hero-right{
-    align-items: end;
-}
-.hero-right img{
-    border-radius: 12px;
-    height: 600px;
-}
-.product-section{
-    margin: 7rem 1rem;
-}
-.section-title{
-    font-size: 2.5rem;
-}
-.product-item{
-    text-decoration: none;
-    color: black;
-    text-align: center;
+  .hero-img {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin-top: -2rem;
-    padding: 1rem 0rem;
-}
-.product-title{
-    font-size: 1.5rem;
-}
-.product-price{
-    font-weight: 700;
-}
-.service-section{
-    margin: 7rem 1rem;
-}
-.service-section img{
-    border-radius: 12px;
-    width: 500px;
-}
-.about-section{
-    margin: 7rem 1rem;
-}
-.about-left img{
-    height: 500px;
-    border-radius: 12px;
-}
-.footer-section{
-    background-color: rgba(217, 217, 217, 1);
-    padding: 1.5rem;
-}
-.footer-logo img{
-    width: 100px;
-    border-radius: 50px;
-}
-.footer-section ul{
-    list-style-type: none;
-}
-.footer-list-title{
-    font-weight: 700;
-}
-.footer-cr{
-    text-align: center;
-    margin-bottom: -1rem;
-}
-.product-main{
-    margin: 10rem 1rem;
-}
-.card{
-    background-color: rgb(234, 234, 234);
-}
-.about-main-section{
-    margin: 7rem 1rem;
-}
-.icon-socmed{
-    display: inline-flex;
-    list-style-type: none;
-    text-decoration: none;
-}
-.icon-socmed i{
-    font-size: 2rem;
-    padding: 0rem 1rem;
-    color: black;
-}
-.modal-content{
-    border-radius: 12px;
-}
-@media  (max-width: 800px){
-    .hero .umkm-desc{
-        display: none;
-    }
-    .hero-img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  }
 }
 
-@media (max-width: 500px){
-    .navbar{
-        padding: 0.5rem 0rem;
-        margin: 1rem 0.5rem;
-    }
-    .form-check{
-        padding: 1rem 1.5rem;
-    }
-    .hero .umkm-title{
-        font-size: 5rem;
-    }
-    .hero .umkm-sub{
-        font-size: 2rem;
-        margin-top: -1rem;
-        letter-spacing: 0.9rem;
-    }
-    .hero .umkm-tagline{
-        font-size: 1rem;
-    }
-    .hero .umkm-desc{
-        display: none;
-    }
-    .hero-right img{
-        height: 80%;
-    }
-    .about-left img{
-        height: 80%;
-    }
-    .footer-logo img{
-        width: 70px;
-    }
-    .footer-section .col-7{
-        width: 100%;
-        margin: 1rem;
-        margin-top: -4.5rem;
-    }
-    .footer-section .col-4{
-        width: 100%;
-        margin: 1rem;
-    }
+@media (max-width: 500px) {
+  .navbar {
+    padding: 0.5rem 0rem;
+    margin: 1rem 0.5rem;
+  }
+  .form-check {
+    padding: 1rem 1.5rem;
+  }
+  .hero .umkm-title {
+    font-size: 5rem;
+  }
+  .hero .umkm-sub {
+    font-size: 2rem;
+    margin-top: -1rem;
+    letter-spacing: 0.9rem;
+  }
+  .hero .umkm-tagline {
+    font-size: 1rem;
+  }
+  .hero .umkm-desc {
+    display: none;
+  }
+  .hero-right img {
+    height: 80%;
+  }
+  .about-left img {
+    height: 80%;
+  }
+  .footer-logo img {
+    width: 70px;
+  }
+  .footer-section .col-7 {
+    width: 100%;
+    margin: 1rem;
+    margin-top: -4.5rem;
+  }
+  .footer-section .col-4 {
+    width: 100%;
+    margin: 1rem;
+  }
 }
