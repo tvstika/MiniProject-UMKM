@@ -1,38 +1,39 @@
-.dark {
-  background-color: #292929;
-  color: #ffff;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-
-  .form-check-input {
-    background-color: #000;
-  }
-  .footer-section,
-  .navbar,
-  .modal-content {
-    background-color: #565656;
-  }
+:root {
+  --bg: #ffff;
+  --primary: #d9d9d9;
+  --secondary: #b3b3b3;
+  --card: #eaeaea;
+  --text: #292929;
 }
-
+.dark-mode {
+  --bg: #292929;
+  --primary: #565656;
+  --secondary: #b3b3b3;
+  --card: #333333;
+  --text: #ffff;
+}
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
 }
 body::-webkit-scrollbar {
   display: none;
 }
 .navbar {
-  background-color: rgba(217, 217, 217, 1);
+  background-color: var(--primary);
   border-radius: 12px;
   padding: 0.5rem 3rem;
   margin: 1rem 2rem;
 }
 .navbar-brand {
   font-weight: 700;
+  color: var(--text);
+}
+.navbar-nav .nav-link.active {
+  color: var(--text);
 }
 .navbar-toggler {
   border: none;
@@ -66,7 +67,8 @@ div .hero {
   word-spacing: 2rem;
 }
 .btn {
-  background-color: rgb(179, 179, 179);
+  background-color: var(--secondary);
+  color: #333333;
   width: 10rem;
   height: 2.5rem;
   border: none;
@@ -91,7 +93,7 @@ div .hero {
 }
 .product-item {
   text-decoration: none;
-  color: black;
+  color: var(--text);
   text-align: center;
   align-items: center;
   margin-top: -2rem;
@@ -118,7 +120,7 @@ div .hero {
   border-radius: 12px;
 }
 .footer-section {
-  background-color: rgba(217, 217, 217, 1);
+  background-color: var(--primary);
   padding: 1.5rem;
 }
 .footer-logo img {
@@ -139,7 +141,7 @@ div .hero {
   margin: 10rem 1rem;
 }
 .card {
-  background-color: rgb(234, 234, 234);
+  background-color: var(--card);
 }
 .about-main-section {
   margin: 7rem 1rem;
@@ -152,10 +154,15 @@ div .hero {
 .icon-socmed i {
   font-size: 2rem;
   padding: 0rem 1rem;
-  color: black;
+  color: var(--text);
 }
 .modal-content {
   border-radius: 12px;
+  background-color: var(--bg);
+  color: var(--text);
+}
+.modal-header {
+  border-color: var(--bg);
 }
 @media (max-width: 800px) {
   .hero .umkm-desc {

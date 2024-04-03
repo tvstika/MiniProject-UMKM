@@ -1,18 +1,24 @@
-const btn = document.body;
+$(document).ready(function () {
+  var darkTheme = window.localStorage.getItem("checkbox");
 
-let dark = () => {
-  btn.classList.toggle('dark');
-  if (btn.classList.contains('dark')) {
-    localStorage.setItem('modeGelap', 'true');
-  } else {
-    localStorage.setItem('modeGelap', 'false');
+  // Set tema default
+  if (darkTheme === "true") {
+    $("#body").addClass("dark-mode");
+    $("#checkbox").prop("checked", true);
   }
-};
 
-document.addEventListener('DOMContentLoaded', () => {
-  if (localStorage.getItem('modeGelap') === 'true') {
-    btn.classList.add('dark');
-  } else {
-    btn.classList.remove('dark');
-  }
+  // Handler klik checkbox
+  $("#checkbox").click(function () {
+    var isChecked = $("#checkbox").prop("checked");
+
+    //Menerapkan dark mode jika checkbox dicentang, jika tidak terapkan light mode
+    if (isChecked) {
+      $("#body").addClass("dark-mode");
+    } else {
+      $("#body").removeClass("dark-mode");
+    }
+
+    //Menyimpan status checkbox ke localStorage
+    window.localStorage.setItem("checkbox", isChecked);
+  });
 });
