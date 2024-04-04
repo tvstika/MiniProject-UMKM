@@ -16,6 +16,8 @@ Tugas keompok 3
 
 **javaScript**
 
+**SASS**
+
 **PHP Laravel:** On Going
 
 ## Clone

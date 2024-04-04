@@ -127,10 +127,14 @@ div .hero {
   width: 100px;
   border-radius: 50px;
 }
+ul li a{
+  text-decoration: none;
+  color: var(--text);
+}
 .footer-section ul {
   list-style-type: none;
 }
-.footer-list-title {
+.footer-list-title a{
   font-weight: 700;
 }
 .footer-cr {
