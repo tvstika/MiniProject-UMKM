@@ -1,0 +1,31 @@
+$font: 'Poppins',
+sans-serif;
+
+body {
+    font: 100% $font;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin section {
+    margin: 7rem 1rem;
+}
+
+.section {
+    @include section;
+}
+
+.section-product {
+    margin: 10rem 1rem;
+}
+
+@mixin button {
+    width: 10rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 50px;
+}
+
+.btn {
+    @include button;
+}
